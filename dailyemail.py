@@ -1,5 +1,6 @@
 #pip install schedule
 
+from cmath import e
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -18,9 +19,9 @@ def send_email():
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = receiver_email
-    msg['Subject'] = f"Daily Report - {datetime.now().strftime('%Y-%m-%d')}
+    msg['Subject'] = (f"Daily Report - {datetime.now().strftime('%Y-%m-%d')}")
 
-    body = 'This daily report'
+    body = 'This is the daily report'
     msg.attach(MIMEText(body, 'plain'))
 
 
@@ -44,4 +45,3 @@ if __name__ == '__main__':
     while True:
         schedule.run_pending()
         time.sleep(1)
-
