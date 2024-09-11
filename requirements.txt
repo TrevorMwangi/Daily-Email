@@ -1,0 +1,11 @@
+pip install schedule
+# Use sender's email password
+Turn on 2FA on google security
+Navigate to app passwords
+Generate app password
+Copy with no spaces
+Use this password in password variable
+Test code in terminal before deploying
+Then open Task Scheduler 
+Follow prompts and set properties
+Big Success!!

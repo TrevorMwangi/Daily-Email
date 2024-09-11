@@ -11,9 +11,10 @@ from datetime import datetime
 # Function to send email
 def send_email():
     # Email configuration
+    # Use sender's email
     sender_email = "willfrazier715@gmail.com"
     receiver_email = "trevormwangi94@gmail.com"
-    password = "EternalAtakeno.1!"
+    password = "lxeianetbsifuswa"
 
     # Create the email header
     msg = MIMEMultipart()
@@ -39,7 +40,7 @@ def send_email():
         print(f'Failed to send email. Error: {str(e)}')
 
 # Schedule the email to be sent daily
-schedule.every().day.at('08:00').do(send_email)  # Set the time you want to send the email
+schedule.every().day.at('09:00').do(send_email)  # Set the time you want to send the email
 
 if __name__ == '__main__':
     while True:
